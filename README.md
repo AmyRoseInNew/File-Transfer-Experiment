@@ -4,7 +4,7 @@
    &emsp;&emsp; 对于文件的删除delete,则直接按照文件名作为id,因为保存的文件都是按照时间戳+随机字符生成的文件名，具有唯一性。  
 详细的API如下：  
 
-接口功能	   &emsp;&emsp;      请求方法与路径	       &emsp;&emsp;   数据传输格式 (Content-Type)  
+接口功能	   &emsp;&emsp;&emsp;&emsp;      请求方法与路径	      &emsp;&emsp; &emsp;&emsp;   数据传输格式 (Content-Type)  
 多文件表单上传	&emsp;&emsp; POST /files/multipart	&emsp;&emsp;  multipart/form-data  
 二进制流上传	  &emsp;&emsp;   POST /files/binary	  &emsp;&emsp;    application/octet-stream  
 Base64文本上传	&emsp;&emsp; POST /files/base64	    &emsp;&emsp;  application/json  
