@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件管理系统 - 带列表预览</title>
+    <!-- 引入外部 CSS 样式表 -->
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. 上传区域 -->
+        <div class="section">
+            <h3>1. 三种方式并行上传</h3>
+            <div class="upload-row">
+                <label>Multipart (cover1): </label><input type="file" id="cover1">
+            </div>
+            <div class="upload-row">
+                <label>二进制流 (cover2): </label><input type="file" id="cover2">
+            </div>
+            <div class="upload-row">
+                <label>Base64 JSON (cover3): </label><input type="file" id="cover3">
+            </div>
+            <button type="button" id="filesubmit">提交文件</button>
+        </div>
+
+        <!-- 2. 文件资产显示列表 -->
+        <div class="section">
+            <h3>📂 服务器照片/视频资产列表</h3>
+            <button type="button" id="btnRefresh" class="btn-secondary">🔄 刷新列表</button>
+            <div class="file-grid" id="fileGrid">
+                <!-- 由 JavaScript 动态渲染占位 -->
+                <p class="empty-tip">暂无数据，请先上传或刷新</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入外部 JS 脚本文件 -->
+    <script src="/js/index.js"></script>
+</body>
+</html>
